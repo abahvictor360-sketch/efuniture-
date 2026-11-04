@@ -326,3 +326,55 @@ h1, h2, h3 { margin: 0; letter-spacing: -0.02em; }
 .cat img { object-fit: contain; padding: 10px 10px 10px 40%; filter: drop-shadow(0 10px 10px rgba(60,40,20,.2)); }
 .hero { background: radial-gradient(80% 90% at 80% 40%, #cfe0da 0%, transparent 70%), linear-gradient(120deg, #2b6a62, #5d958b 55%, #a9c7bf); }
 .hero-img { object-fit: contain; width: 58%; padding: 14px 6px 22px 0; -webkit-mask-image: none; mask-image: none; filter: drop-shadow(0 16px 14px rgba(0,30,25,.35)); }
+
+/* ---------- Motion ---------- */
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes slideIn { from { opacity: 0; transform: translateX(28px); } to { opacity: 1; transform: none; } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(100%); } to { opacity: 1; transform: none; } }
+@keyframes zoomIn { from { opacity: 0; transform: scale(.82) rotate(-3deg); } to { opacity: 1; transform: none; } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@keyframes heartPop { 0% { transform: scale(1); } 35% { transform: scale(1.45); } 60% { transform: scale(.9); } 100% { transform: scale(1); } }
+@keyframes bump { 0% { transform: scale(.4); } 60% { transform: scale(1.35); } 100% { transform: scale(1); } }
+@keyframes tabBounce { 0% { transform: translateY(0); } 40% { transform: translateY(-5px); } 100% { transform: translateY(0); } }
+@keyframes shimmer { from { background-position: -200% 0; } to { background-position: 200% 0; } }
+
+.route-anim { animation: none; }
+.page > :not(.minicart):not(.pd-cta):not(.profile-bg) { animation: rise .55s cubic-bezier(.2,.8,.2,1) both; }
+.page > :nth-child(2) { animation-delay: .05s !important; }
+.page > :nth-child(3) { animation-delay: .1s !important; }
+.page > :nth-child(4) { animation-delay: .15s !important; }
+.page > :nth-child(5) { animation-delay: .2s !important; }
+.page > :nth-child(6) { animation-delay: .25s !important; }
+.page > :nth-child(n+7) { animation-delay: .3s !important; }
+
+.grid .pcard, .hscroll .pcard, .cat, .cart-item, .menu-item, .order, .chip { animation: rise .5s cubic-bezier(.2,.8,.2,1) both; }
+.hscroll .pcard, .cart-item, .chip { animation-name: slideIn; }
+.grid > :nth-child(1), .hscroll > :nth-child(1), .cat-grid > :nth-child(1), .cart-list > :nth-child(1), .menu > :nth-child(1), .chips > :nth-child(1) { animation-delay: .15s; }
+.grid > :nth-child(2), .hscroll > :nth-child(2), .cat-grid > :nth-child(2), .cart-list > :nth-child(2), .menu > :nth-child(2), .chips > :nth-child(2) { animation-delay: .22s; }
+.grid > :nth-child(3), .hscroll > :nth-child(3), .cat-grid > :nth-child(3), .cart-list > :nth-child(3), .menu > :nth-child(3), .chips > :nth-child(3) { animation-delay: .29s; }
+.grid > :nth-child(4), .hscroll > :nth-child(4), .cat-grid > :nth-child(4), .cart-list > :nth-child(4), .menu > :nth-child(4), .chips > :nth-child(4) { animation-delay: .36s; }
+.grid > :nth-child(5), .hscroll > :nth-child(5), .cat-grid > :nth-child(5), .menu > :nth-child(5), .chips > :nth-child(5) { animation-delay: .43s; }
+.grid > :nth-child(6), .hscroll > :nth-child(6), .menu > :nth-child(6), .chips > :nth-child(6) { animation-delay: .5s; }
+.grid > :nth-child(n+7), .menu > :nth-child(n+7) { animation-delay: .56s; }
+
+.hero-img { animation: zoomIn .7s cubic-bezier(.2,.9,.3,1.2) both, float 4s ease-in-out .7s infinite; }
+.hero-text h1 { animation: slideIn .6s cubic-bezier(.2,.8,.2,1) both; }
+.hero .btn.white { position: relative; overflow: hidden; }
+.hero .btn.white::after { content: ''; position: absolute; inset: 0; background: linear-gradient(110deg, transparent 30%, rgba(15,59,58,.12) 50%, transparent 70%); background-size: 200% 100%; animation: shimmer 2.4s linear infinite; }
+.pd-hero img { animation: zoomIn .8s cubic-bezier(.2,.9,.3,1.2) both, float 5s ease-in-out .8s infinite; }
+.pd-body { animation: slideUp .6s cubic-bezier(.2,.8,.2,1) both .1s; }
+.minicart, .pd-cta { animation: slideUp .55s cubic-bezier(.2,.8,.2,1) both .35s; }
+.fav.on svg, .fav-on svg { animation: heartPop .45s ease both; }
+.badge.bump { animation: bump .45s cubic-bezier(.2,.9,.3,1.4) both; }
+.tab.active svg { animation: tabBounce .45s ease both; }
+.pcard:active { transform: scale(.97); }
+.avatar-glass { animation: zoomIn .7s cubic-bezier(.2,.9,.3,1.2) both .1s; }
+.stats b { display: inline-block; animation: bump .6s both .5s; }
+.success svg { animation: zoomIn .6s both .3s; }
+.empty-ic { animation: float 3s ease-in-out infinite; }
+.cat img { transition: transform .5s cubic-bezier(.2,.8,.2,1); }
+.cat:active img { transform: scale(1.08) rotate(-2deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

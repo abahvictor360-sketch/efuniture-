@@ -19,7 +19,7 @@ export function CartButton() {
   const { cartCount } = useStore(); const nav = useNavigate()
   return (
     <button className="icon-btn cart-btn" aria-label="Cart" onClick={() => nav('/cart')}>
-      <Ic.Cart />{cartCount > 0 && <span className="badge">{cartCount}</span>}
+      <Ic.Cart />{cartCount > 0 && <span key={cartCount} className="badge bump">{cartCount}</span>}
     </button>
   )
 }

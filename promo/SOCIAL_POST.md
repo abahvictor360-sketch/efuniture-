@@ -1,7 +1,7 @@
 # Efuniture — Social Media Post Kit
 
 **Live demo:** https://efuniture.vercel.app
-**Video:** `promo/efuniture-mobile-promo.mp4` (1080×1920, 9:16, about 39 s, made for Reels, TikTok, Shorts and Status)
+**Video:** `promo/efuniture-mobile-promo.mp4` (1080×1920, 9:16, about 40 s, made for Reels, TikTok, Shorts and Status; shows the app with motion effects and solid surfaces, no liquid glass)
 
 ---
 
@@ -19,6 +19,7 @@ I turned a furniture e-commerce concept into a working mobile web app with a mod
 ✅ Product detail pages, cart, checkout and order tracking
 ✅ Favorites and a user profile with a liquid glass avatar
 ✅ Studio-style product cutouts (backgrounds removed)
+✅ Smooth motion: staggered entrances, floating products, animated hearts and cart
 ✅ Fully responsive and deployed on Vercel
 
 🔧 Built with React, Vite, React Router and CSS (glassmorphism / liquid glass)
