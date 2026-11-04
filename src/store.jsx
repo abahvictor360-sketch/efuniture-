@@ -2,13 +2,13 @@ import { createContext, useContext, useEffect, useState } from 'react'
 import { byId, sampleOrders } from './data'
 
 const Ctx = createContext(null)
-const load = (k, d) => { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d } catch { return d } }
-const save = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)) } catch {} }
+const load = (k, d) => { try { const v = localStorage.getItem('v2_' + k); return v ? JSON.parse(v) : d } catch { return d } }
+const save = (k, v) => { try { localStorage.setItem('v2_' + k, JSON.stringify(v)) } catch {} }
 
 export function StoreProvider({ children }) {
   const [user, setUser] = useState(() => load('ef_user', null))
-  const [cart, setCart] = useState(() => load('ef_cart', [{ id: 'luna-accent', qty: 1 }, { id: 'luna-lounge', qty: 1 }]))
-  const [favs, setFavs] = useState(() => load('ef_favs', ['luna-accent', 'bondi-table']))
+  const [cart, setCart] = useState(() => load('ef_cart', [{ id: 'boucle-arc-chair', qty: 1 }, { id: 'cloud-boucle-chair', qty: 1 }]))
+  const [favs, setFavs] = useState(() => load('ef_favs', ['lotus-sofa', 'walnut-arch-chair', 'maple-leaf-chair']))
   const [orders, setOrders] = useState(() => load('ef_orders', sampleOrders))
   const [toast, setToast] = useState('')
 
@@ -24,8 +24,8 @@ export function StoreProvider({ children }) {
   }
   const setQty = (id, qty) => setCart((c) => qty <= 0 ? c.filter((i) => i.id !== id) : c.map((i) => i.id === id ? { ...i, qty } : i))
   const toggleFav = (id) => setFavs((f) => f.includes(id) ? f.filter((x) => x !== id) : [...f, id])
-  const cartCount = cart.reduce((s, i) => s + i.qty, 0)
-  const cartTotal = cart.reduce((s, i) => s + i.qty * (byId(i.id)?.price || 0), 0)
+  const cartCount = cart.filter((i) => byId(i.id)).reduce((s, i) => s + i.qty, 0)
+  const cartTotal = cart.filter((i) => byId(i.id)).reduce((s, i) => s + i.qty * (byId(i.id)?.price || 0), 0)
   const checkout = () => {
     const id = 'EF-' + Math.floor(20600 + Math.random() * 900)
     setOrders((o) => [{ id, date: new Date().toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' }), status: 'Processing', items: cart.map((i) => i.id), total: cartTotal + (cartTotal >= 199 ? 0 : 25) }, ...o])

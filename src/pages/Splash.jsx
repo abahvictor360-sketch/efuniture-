@@ -8,7 +8,7 @@ export default function Splash() {
   useEffect(() => { const t = setTimeout(() => nav(user ? '/home' : '/login', { replace: true }), 2800); return () => clearTimeout(t) }, [])
   return (
     <div className="splash" onClick={() => nav(user ? '/home' : '/login', { replace: true })}>
-      <img className="splash-bg" src="/img/hero.jpg" alt="" />
+      <img className="splash-bg" src="/img/room-lotus.jpg" alt="" />
       <div className="splash-shade" />
       <div className="splash-center">
         <div className="splash-logo glass glass-strong"><Logo size={64} color="#ffffff" accent="#9fe3d9" /></div>

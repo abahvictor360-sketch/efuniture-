@@ -25,7 +25,7 @@ export default function Login() {
   return (
     <div className="login">
       <div className="login-hero">
-        <img src="/img/haven.jpg" alt="" />
+        <img src="/img/room-boucle.jpg" alt="" />
         <div className="login-hero-shade" />
         <div className="login-hero-text">
           <div className="glass glass-strong login-badge"><Ic.Logo size={30} color="#fff" accent="#9fe3d9" /></div>

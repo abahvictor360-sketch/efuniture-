@@ -4,7 +4,7 @@ import { CartButton, ProductCard, MiniCartBar, Empty } from '../components'
 import { products } from '../data'
 import * as Ic from '../icons'
 
-const subtitles = { 'Living Room': 'Find the perfect pieces for your space.', Bedroom: 'Rest easy with calm, cosy pieces.', Office: 'Work beautifully from home.', Dining: 'Gather around timeless design.', Outdoor: 'Bring comfort outside.' }
+const subtitles = { 'Living Room': 'Find the perfect pieces for your space.', Bedroom: 'Rest easy with calm, cosy pieces.', Office: 'Work beautifully from home.', Lounge: 'Sink in and slow down.', Luxury: 'Sculptural statement pieces.' }
 
 export default function Category() {
   const { name } = useParams(); const nav = useNavigate()

@@ -316,3 +316,13 @@ h1, h2, h3 { margin: 0; letter-spacing: -0.02em; }
 .mi-ch { margin-left: auto; color: var(--muted); }
 .menu-item.danger { color: #b42318; }
 .menu-item.danger .mi-ic { background: #fef3f2; color: #b42318; }
+
+/* ---------- Cut-out product imagery ---------- */
+.pimg, .pd-hero, .cart-item img, .o-items img, .minicart img, .cat { background: radial-gradient(90% 70% at 50% 35%, #ffffff 0%, #f1ede7 60%, #e7e1d8 100%); }
+.pimg img { object-fit: contain; padding: 14px 10px 8px; filter: drop-shadow(0 10px 10px rgba(60,40,20,.18)); transition: transform .35s; }
+.pcard:hover .pimg img { transform: scale(1.05); }
+.cart-item img, .o-items img, .minicart img { object-fit: contain; padding: 4px; }
+.pd-hero img { object-fit: contain; padding: 80px 30px 50px; filter: drop-shadow(0 22px 20px rgba(60,40,20,.22)); }
+.cat img { object-fit: contain; padding: 10px 10px 10px 40%; filter: drop-shadow(0 10px 10px rgba(60,40,20,.2)); }
+.hero { background: radial-gradient(80% 90% at 80% 40%, #cfe0da 0%, transparent 70%), linear-gradient(120deg, #2b6a62, #5d958b 55%, #a9c7bf); }
+.hero-img { object-fit: contain; width: 58%; padding: 14px 6px 22px 0; -webkit-mask-image: none; mask-image: none; filter: drop-shadow(0 16px 14px rgba(0,30,25,.35)); }

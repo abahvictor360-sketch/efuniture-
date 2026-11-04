@@ -5,10 +5,10 @@ import { categories, products } from '../data'
 import * as Ic from '../icons'
 
 const slides = [
-  { title: ['Crafted Comfort.', 'Timeless Style.'], text: ['Discover furniture', 'that fits your life.'], img: '/img/hero.jpg', to: '/category/Living Room' },
-  { title: ['New Season.', 'Softer Living.'], text: ['The Haven sofa is', 'here — 15% off.'], img: '/img/haven.jpg', to: '/product/haven-sofa' },
-  { title: ['Solid Wood.', 'Built to Last.'], text: ['Tables crafted from', 'sustainable ash.'], img: '/img/bondi.jpg', to: '/product/bondi-table' },
-  { title: ['Store More.', 'Show Less.'], text: ['Media units with', 'hidden storage.'], img: '/img/tv.jpg', to: '/product/scandi-tv' },
+  { title: ['Crafted Comfort.', 'Timeless Style.'], text: ['Discover furniture', 'that fits your life.'], img: '/img/products/boucle-arc-chair.webp', to: '/category/Living Room' },
+  { title: ['Lotus Bloom.', 'Pure Statement.'], text: ['Our new luxury sofa', 'is here — 15% off.'], img: '/img/products/lotus-sofa.webp', to: '/product/lotus-sofa' },
+  { title: ['Solid Wood.', 'Built to Last.'], text: ['Hand-finished walnut', 'frames that endure.'], img: '/img/products/walnut-arch-chair.webp', to: '/product/walnut-arch-chair' },
+  { title: ['Sculpted.', 'Like Art.'], text: ['Designer pieces for', 'bold interiors.'], img: '/img/products/maple-leaf-chair.webp', to: '/category/Luxury' },
 ]
 
 export default function Home() {

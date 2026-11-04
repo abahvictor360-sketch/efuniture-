@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import { CartButton, ProductCard, SearchBar } from '../components'
 import { categories, products } from '../data'
 
-const covers = { 'Living Room': '/img/haven.jpg', Bedroom: '/img/accent.jpg', Office: '/img/bondi.jpg', Dining: '/img/oakwood.jpg', Outdoor: '/img/aria.jpg' }
+const covers = { 'Living Room': '/img/products/luxe-gold-sofa.webp', Bedroom: '/img/products/ruby-swivel.webp', Lounge: '/img/products/cove-cafe-chair.webp', Luxury: '/img/products/lotus-sofa.webp', Office: '/img/products/arc-x-lounge.webp' }
 
 export default function Shop() {
   const nav = useNavigate()
