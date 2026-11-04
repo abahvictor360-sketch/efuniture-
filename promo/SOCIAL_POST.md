@@ -67,4 +67,4 @@ A responsive furniture shopping app featuring a splash screen, authentication, p
 ---
 
 ## SEO keywords to reuse in bios and portfolios
-furniture app UI, furniture e-commerce website, mobile app UI designer, React developer for hire, frontend developer freelance, e-commerce app developer, liquid glass UI, glassmorphism design, shopping app UI kit, interior design app, UI/UX designer portfolio, web app developer Nigeria, hire React developer, Vercel deployment, startup MVP developer
+furniture app UI, furniture e-commerce website, mobile app UI designer, React developer for hire, frontend developer freelance, e-commerce app developer, liquid glass UI, glassmorphism design, shopping app UI kit, interior design app, UI/UX designer portfolio, hire React developer, Vercel deployment, startup MVP developer
