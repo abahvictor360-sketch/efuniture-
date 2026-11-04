@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:03,300
+Efuniture: Crafted Comfort. Timeless Style.
+
+2
+00:00:03,300 --> 00:00:06,600
+Smooth sign in, fast and secure.
+
+3
+00:00:06,600 --> 00:00:12,600
+Discover curated designer furniture.
+
+4
+00:00:12,600 --> 00:00:19,400
+Shop by room. Filter by price, color and material.
+
+5
+00:00:19,400 --> 00:00:25,200
+Every detail on rich product pages.
+
+6
+00:00:25,200 --> 00:00:31,800
+Effortless checkout with order tracking.
+
+7
+00:00:31,800 --> 00:00:34,400
+Save your favorites with one tap.
+
+8
+00:00:34,400 --> 00:00:37,400
+Your profile: orders, favorites and settings.
+
+9
+00:00:37,400 --> 00:00:40,600
+Need an app like this? Let's build yours. efuniture.vercel.app

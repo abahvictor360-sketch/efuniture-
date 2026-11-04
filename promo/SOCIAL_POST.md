@@ -1,9 +1,50 @@
 # Efuniture — Social Media Post Kit
 
 **Live demo:** https://efuniture.vercel.app
-**Video:** `promo/efuniture-mobile-promo.mp4` (1080×1920, 9:16, about 40 s, made for Reels, TikTok, Shorts and Status; shows the app with motion effects and solid surfaces, no liquid glass)
+
+## Which video to upload
+| File | Use it for |
+|---|---|
+| `promo/efuniture-promo-captioned.mp4` | **Instagram Reels, TikTok, Facebook, WhatsApp Status, X.** Captions are burned into the picture, so they show even with the sound off. |
+| `promo/efuniture-mobile-promo.mp4` | **YouTube Shorts, LinkedIn.** Clean picture with captions as a subtitle track viewers can turn on. You can also upload `promo/efuniture-captions.srt` as closed captions. |
+
+Both are 1080×1920 (9:16), 40 seconds, with an original lo-fi background track (composed for this project, royalty-free, no copyright claims). The audio is normalized to −14 LUFS, the platform standard. The videos show the app's motion effects and use solid surfaces instead of liquid glass.
+
+**Tip:** on TikTok and Reels you can also lay a trending sound at low volume over the track to boost reach.
 
 ---
+
+## 🎬 Ready-to-post video captions
+
+### Instagram Reels
+Your next favourite chair is one tap away 🛋️✨
+
+I designed and built **Efuniture**, a furniture shopping app with smooth motion, filters, cart, checkout and order tracking. Built in React and live now 👇
+🔗 efuniture.vercel.app (link in bio)
+
+💼 Need an app or website for your business? DM me **"APP"** and let's build yours 📩
+
+.
+.
+#uidesign #uxdesign #appdesign #mobileappdesign #reactjs #frontenddeveloper #webdeveloper #ecommercewebsite #furnitureapp #interiordesign #furnituredesign #reelsinstagram #techreels #freelancedeveloper #hireme #uiinspiration #dribbble #behance #webdesign #madewithreact
+
+### TikTok
+POV: you built a furniture shopping app from scratch 🛋️📱 Smooth motion, filters, cart and checkout. Would you shop here? 👀 Need one for your brand? DM "APP" 📩
+#appdesign #uidesign #reactjs #webdeveloper #techtok #codingtok #frontend #ecommerce #furniture #interiordesign #fyp #foryou #hireme
+
+### YouTube Shorts
+**Title:** I Built a Furniture Shopping App in React 🛋️ (UI/UX + Frontend)
+**Description:** Efuniture: splash, login, shop by room, filters, product pages, cart, checkout, order tracking and profile, with smooth motion animations. Live demo: https://efuniture.vercel.app. Available for freelance app and web projects. #shorts #reactjs #uiux #webdevelopment #appdesign
+
+### Facebook / WhatsApp Status
+Just launched Efuniture 🛋️, a furniture shopping app I designed and built. Smooth, fast and mobile-first. Try it: efuniture.vercel.app
+Looking for someone to build your business app or website? Message me today! 📩
+
+### LinkedIn video post
+Use the LinkedIn long-form post below with `efuniture-mobile-promo.mp4`, and upload `efuniture-captions.srt` as captions.
+
+---
+
 
 ## LinkedIn (long form)
 
@@ -32,7 +73,7 @@ I turned a furniture e-commerce concept into a working mobile web app with a mod
 
 ---
 
-## Instagram / TikTok caption (short)
+## Alternative short caption (Instagram / TikTok)
 
 Swipe through Efuniture 🛋️✨ a furniture shopping app with a liquid glass UI, built in React and live on Vercel.
 
