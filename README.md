@@ -20,4 +20,6 @@ npm run dev
 ## Deploy
 Static Vite build (`npm run build` → `dist/`), with SPA rewrites in `vercel.json`.
 
-To use your own profile photo, replace `public/img/avatar.jpg`.
+**Live:** https://efuniture.vercel.app · Promo video and social media copy are in `promo/`.
+
+The profile photo is `public/img/avatar.jpg`. Product cutouts are in `public/img/products/`.
